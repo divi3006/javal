@@ -1,0 +1,16 @@
+# Ignore compiled class files
+*.class
+
+# Ignore IDE/project settings
+.settings/
+.classpath
+.project
+.vscode/
+
+# Ignore data files
+*.csv
+*.xls
+*.xlsx
+*.pdf
+*.txt
+*.log

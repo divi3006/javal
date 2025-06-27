@@ -1,5 +1,10 @@
 package week2;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
+import Week6.Passenger;
+
 public class Demo {
 	static void print(int a, long b) 
 	{
@@ -18,3 +23,14 @@ public class Demo {
 	}
 
 }
+System.out.println("Enter your Pid");
+int wlchecked=s.nextInt();
+List<Passenger> isWlPass = wlPassengers.stream()
+.filter(e->e.getPid() ==wlchecked)
+.collect(Collectors.toList());
+if(wlPassengers!= null && !wlPassengers.isEmpty()) {
+	System.out.println("Booked Wl Limit"+isWlPass.get(0).getBkdwlLimit());
+	System.out.println("Current Wl Limit"+isWlPass.get(0).getCurrentwlLimit());        }
+	else {
+		wlPassengers.forEach(e->e.getCurrentwlLimit());
+	}

@@ -1,5 +1,10 @@
 package week1;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
+import Week6.Passenger;
+
 public class Day3 {
 char c=5;
 short s=12;
@@ -12,4 +17,3 @@ System.out.println("arr[1]");
 	}
 			
 }
- 
